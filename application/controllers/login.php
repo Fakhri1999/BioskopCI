@@ -56,7 +56,7 @@ class Login extends CI_Controller
             'nama' => $this->input->post('fullname'),
             'username' => $this->input->post('username'),
             'email' => $this->input->post('email'),
-            'jenis'
+            'jenis_kelamin' => $this->input->post('jenisKelamin'),
             'password' => $this->input->post('password')
         );
         $this->login_model->register($data);
@@ -120,5 +120,12 @@ class Login extends CI_Controller
             window.location.href='" . base_url('login') . "';
             alert('Logout successful!');
             </script>";
+    }
+
+    public function forget_password()
+    {
+        $this->load->view('templates/header');
+        $this->load->view('login/forget_password');
+        $this->load->view('templates/footer');
     }
 }

@@ -33,7 +33,9 @@ class User extends CI_Controller
         $sess = array(
             'username' => $this->session->userdata('username')
         );
+
         $data['user'] = $this->user_model->get_all_data($sess);
+        $data['jeniskel'] = array('L', 'P');
         $this->load->view('templates/header');
         $this->load->view('user/edit-data', $data);
         $this->load->view('templates/footer');

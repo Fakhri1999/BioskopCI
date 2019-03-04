@@ -17,7 +17,7 @@ else if($user['jenis_kelamin'] == "P")
             Full Name       : <?= $user['nama'];?><br>
             Username        : <?= $user['username'];?><br>
             Email           : <?= $user['email'];?><br>
-            Jenis Kelamin   : <?= $jk;?><br>
+            Jenis Kelamin   : <?= $user['jenis_kelamin'];?><br>
             Alamat          : <?= $user['alamat'];?><br>
             No Telepon      : <?= $user['no_telp'];?><br>
             Saldo           : Rp <?= $user['saldo'];?><br><br>

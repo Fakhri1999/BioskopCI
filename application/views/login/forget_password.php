@@ -8,23 +8,16 @@
     <?php endif;?>
     <div class="form">
         <div class="card text-center">
-            <h5 class="card-header">Login</h5>
+            <h5 class="card-header">Forget Password</h5>
             <div class="card-body">
                 <form action="<?= base_url('login/login_validation');?>" method="POST">
                     <div class="hitam">
                         <div class="form-group">
-                            <label>Username</label>
+                            <label>Enter your username</label>
                             <input type="text" class="form-control" name="username">
                             <small class="form-text text-danger"><?php echo form_error('username');?></small>
                         </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" class="form-control" name="password">
-                            <small class="form-text text-danger"><?php echo form_error('password');?></small>
-                        </div>
                         <button type="submit" class="btn btn-primary">Login</button>
-                        <small class="form-text text-muted">Forgot your username or password? <a href="<?= base_url('login/forget_password');?>">Click here</a></small> 
-                        <small class="form-text text-muted">Dont have an account? <a href="<?= base_url('login/register');?>">Register here</a></small> 
                     </div>
                 </form>                
             </div>

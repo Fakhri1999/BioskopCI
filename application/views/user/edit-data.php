@@ -23,10 +23,10 @@
                         <label>Jenis Kelamin</label>
                         <select class="form-control" name="jenisKelamin" id="jenisKelamin">
                         <?php foreach ($jeniskel as $jns):?>
-                            <?php if ($mhs['jurusan'] == $jrs):?>
-                                <option value="<?php echo $jrs;?>" selected><?php echo $jrs;?></option>
+                            <?php if ($user['jenis_kelamin'] == $jns):?>
+                                <option value="<?php echo $jns;?>" selected><?php echo $jns;?></option>
                             <?php else:?>
-                                <option value="<?php echo $jrs;?>"><?php echo $jrs;?></option>
+                                <option value="<?php echo $jns;?>"><?php echo $jns;?></option>
                             <?php endif;?>
                         <?php endforeach;?>
                         </select>
